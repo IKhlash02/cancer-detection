@@ -13,4 +13,10 @@
     <string name="take_picture">Take picture of your skin to know the cancer or not</string>
     <string name="history">History</string>
     <string name="result_1">Result</string>
+
+    <string name="cancer_1">Hasil pemeriksaan menunjukkan adanya tanda-tanda kanker. Kami sarankan Anda segera menghubungi dokter atau profesional kesehatan untuk konsultasi lebih lanjut dan mendapatkan penanganan yang tepat</string>
+    <string name="cancer_2">Ingat, deteksi dini adalah langkah penting dalam penanganan. Jangan tunda untuk mencari pertolongan medis.</string>
+
+    <string name="non_cancer_1">Selamat! Hasil pemeriksaan tidak menunjukkan adanya tanda-tanda kanker. Tetap jaga kesehatan Anda dan lakukan pemeriksaan rutin untuk memastikan kondisi Anda tetap optimal.</string>
+    <string name="non_cancer_2">Penting untuk tetap waspada dan menjaga pola hidup sehat agar kesehatan Anda tetap terjaga.</string>
 </resources>

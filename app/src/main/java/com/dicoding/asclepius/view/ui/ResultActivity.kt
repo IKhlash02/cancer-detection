@@ -27,8 +27,16 @@ class ResultActivity : AppCompatActivity() {
 
         //Menampilkan hasil gambar, prediksi, dan confidence score.
         val imageUri = Uri.parse(intent.getStringExtra(MainActivity.EXTRA_IMAGE))
-        val result = intent.getStringExtra(MainActivity.EXTRA_RESULT)
+        val result = intent.getStringExtra(MainActivity.EXTRA_RESULT) ?: ""
         val date = intent.getStringExtra(MainActivity.EXTRA_DATE)
+
+        if (result.contains("Non Cancer")) {
+            binding.textMessage1.text = getString(R.string.non_cancer_1)
+            binding.textMessage2.text = getString(R.string.non_cancer_2)
+        } else {
+            binding.textMessage1.text = getString(R.string.cancer_1)
+            binding.textMessage2.text = getString(R.string.cancer_2)
+        }
 
         binding.resultImage.setImageURI(imageUri)
         binding.resultText.text = result
